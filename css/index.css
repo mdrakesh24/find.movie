@@ -77,6 +77,10 @@ h1{
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1 span{
+    color: royalblue;
+}
+
 form{
     display: flex;
     flex-direction: row;
@@ -114,10 +118,77 @@ form{
 /* *****************************Main Container************************** */
 main{
     min-height: 80vh;
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: column;
 }
 
+#result{
+    margin: 50px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
 
+.movie-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px 50px 40px 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(128, 128, 128, 0.619);
+}
 
+.movie-image{
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.movie-image img{
+    border-radius: 10px;
+}
+
+.movie-details{
+    padding: 10px 30px;
+}
+
+.movie-details h3, p{
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 30px;
+    color: royalblue;
+}
+
+.movie-details h2{
+    color: royalblue;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: lightyellow;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px grey;
+}
+
+.movie-details h2 span{
+    color: black;
+}
+
+.movie-details h3 span, h4 span{
+    color: royalblue;
+    font-weight: 700;
+}
+
+.movie-details h3{
+    color: rgba(255, 68, 0, 0.913);
+    font-weight: 400;
+}
+
+.movie-details h4{
+    color: black;
+    font-weight: 400;
+    line-height: 25px;
+}
 
 /***********************Footer***********************/
 footer{
@@ -158,8 +229,26 @@ footer ul li a:hover{
 
 
 
+/* *************************Responsive**************************** */
+@media screen and (max-width: 1200px){
+    main{
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .movie-container{
+        margin: 40px 10px;
+    }
+}
 
 @media screen and (max-width: 750px){
+    .movie-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 20px;
+    }
     footer{
         flex-wrap: wrap;
     }
@@ -175,6 +264,16 @@ footer ul li a:hover{
     }
     nav .logo{
         margin-bottom: 10px;
+    }
+    .movie-container{
+        margin: 30px 0px;
+        padding: 10px 0px;
+    }
+    .movie-details{
+        padding: 10px;
+    }
+    .movie-image{
+        padding: 10px;
     }
     footer{
         flex-direction: column;

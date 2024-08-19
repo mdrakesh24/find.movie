@@ -5,23 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/thumbnails/012/627/675/small/3d-movie-clapper-board-social-media-network-and-film-making-concept-high-quality-isolated-3d-render-png.png" type="image/x-icon">
-    <link rel="stylesheet" href="./index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/index.css">
     <title>Movie API</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <a class="logo" href="./index.html"><span>API</span> Connect</a>
+            <a class="logo" href="https://mdrakesh24.github.io/apiconnect.github.io/"><span>API</span> Connect</a>
             <ul>
-                <li><a href="./index.html">Home</a></li>
+                <li><a href="https://mdrakesh24.github.io/apiconnect.github.io/">Home</a></li>
                 <li><a id="aboutBtn" href="#">About</a></li>
                 <li><a href="#foot">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Search Your Favourite movies Here</h1>
+        <h1>Search Your Favourite <span>Movies</span> Here</h1>
         <div class="search-container">
             <form action="">
                 <input type="text" id="search-input" placeholder="Type here to search">
@@ -29,10 +30,26 @@
             </form>
         </div>
 
+        <h2 id="result">No movies searched till now.</h2>
         <div class="movie-container">
-            <h2>No movies searched till now</h2>
-            <div class="movie-image"></div>
-            <div class="movie-details"></div>
+            <div class="movie-image">
+                <img id="img_box" src="#" alt="">
+            </div>
+            <div class="movie-details">
+                <h2 id="title"></h2>
+                <h3 id="genre"></h3>
+                <h3 id="actors"></h3>
+                <h3 id="director"></h3>
+                <h3 id="runtime"></h3>
+                <h3 id="released"></h3>
+                <h3 id="rating"></h3>
+                <h3 id="country"></h3>
+                <h3 id="language"></h3>
+                <h4 id="rated"></h4>
+                <h4 id="awards"></h4>
+                <h4 id="writer"></h4>
+                <h4 id="plot"></h4>
+            </div>
         </div>
     </main>
     <footer id="foot">
@@ -65,7 +82,8 @@
             <li><a href="#">&copy; API Connect, 2024</a></li>
         </ul>
     </footer>
-    <script src="./index.js"></script>
+    <script src="./js/index.js"></script>
+    
 </body>
 
 </html>
